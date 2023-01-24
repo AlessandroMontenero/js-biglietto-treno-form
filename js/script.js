@@ -3,18 +3,23 @@ document.getElementById('calcPrice').onclick = function() {calcPrice()}
 function calcPrice() {
     const userName = document.getElementById("userName").value
     const distance = parseInt(document.getElementById("distance").value)
-    const age =document.getElementById("age").value
+    const casata = document.getElementById("casata").value
     let saleAmount = 100
-    let saleType = "Biglietto Standard"
+    let saleType = "Serpeverde"
 
 
-    if (age == 'under18') {
+    if (casata == 'corvonero') {
         saleAmount = 80
-        saleType = "Sconto Under18"
+        saleType = "Corvonero"
     }
-    else if (age == 'over65') {
+    else if (casata == 'tassorosso') {
         saleAmount = 60
-        saleType = "Sconto Over65"
+        saleType = "Tassorosso"
+    }
+
+    else if (casata == 'grifondoro') {
+        saleAmount = 0
+        saleType = "Grifondoro"
     }
     let carriage = Math.round((Math.random() * 12) + 1)
     let cpCode = Math.round(100000 + (Math.random() * 900000))

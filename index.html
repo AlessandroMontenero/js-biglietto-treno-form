@@ -4,22 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>js-biglietto-treno-form</title>
   </head>
   <body>
-    <input type="text" name="nome" id="userName" />
-    <input type="text" name="distanza" id="distance" />
-    <select name="age" id="age">
-      <option value="under18">Meno di 18 anni</option>
-      <option value="mid">Tra 18 e 65 anni</option>
-      <option value="over65">Più di 65 anni</option>
+    <input type="text" name="nome" id="userName" value="nome completo" />
+    <input type="text" name="distanza" id="distance" value="Km da percorrere" />
+    <select name="casata" id="casata">
+      <option value="corvonero">Corvonero</option>
+      <option value="serpeverde">Serpeverde</option>
+      <option value="tassorosso">Tassorosso</option>
+      <option value="grifondoro">Grifondoro</option>
     </select>
     <button id="calcPrice">Genera</button>
-    <p id="ticketName"></p>
-    <p id="cpCode"></p>
-    <p id="carriage"></p>
-    <p id="saleType"></p>
-    <p id="ticketPrice"></p>
+
+    <div class="container">
+      <div class="ticket">
+        <div class="title"><h2>HOGWARTS EXPRESS</h2></div>
+        <div class="passenger">
+          <h5>PASSENGER</h5>
+          <h4>
+            <p id="ticketName"></p>
+          </h4>
+        </div>
+        <div class="depart">
+          <h5>DEPART</h5>
+          <h4>KING'S CROSS</h4>
+        </div>
+
+        <div class="code">
+          <h5>WIZARD CODE</h5>
+          <h4>
+            <p id="cpCode"></p>
+          </h4>
+        </div>
+        <div class="car">
+          <h5>CAR</h5>
+          <h4>
+            <p id="carriage"></p>
+          </h4>
+        </div>
+        <div class="seat">
+          <h5>PRICE</h5>
+          <h4>
+            <p id="ticketPrice"></p>
+          </h4>
+        </div>
+        <div class="ticketSaleType">
+          <h5>CASATA</h5>
+          <h4>
+            <p id="saleType"></p>
+          </h4>
+        </div>
+        <div class="platform">
+          <h3>DEPART</h3>
+          <h2>FROM</h2>
+          <h4>PLATFORM</h4>
+          <h1>9 ¾</h1>
+        </div>
+      </div>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
