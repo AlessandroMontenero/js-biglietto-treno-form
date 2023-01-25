@@ -14,7 +14,7 @@
     background-color: var(--bg-color);
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 2rem;
+    margin-top: 6rem;
     display: flex;
 }
 
@@ -119,6 +119,7 @@
 .title h2 {
     margin: 0.5rem;
     color: var(--bg-color);
+    letter-spacing: 0.4rem;
 }
 .passenger {
     grid-row: 2;
@@ -135,17 +136,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .platform h3 {
-    margin: 0.2rem;
+    margin: 0.1rem;
+    letter-spacing: 0.15rem;
 }
 .platform h2 {
-    margin: 0.2rem;
+    margin: 0.1rem;
+    letter-spacing: 0.3rem;
 }
 .platform h1 {
     margin: 0.2rem;
+    font-size: 3rem;
 }
 
 .depart {
@@ -214,6 +218,7 @@
     font-size: 1rem;
     margin: 0.2rem;
     color: white;
+    letter-spacing: 0.08rem;
 }
 
 .rightGrid div h5 {
