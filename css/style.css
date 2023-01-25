@@ -233,3 +233,7 @@
 .ticketRight .barCode {
     width: 80px;
 }
+
+.textUppercase {
+    text-transform: uppercase;
+}
