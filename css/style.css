@@ -237,3 +237,13 @@
 .textUppercase {
     text-transform: uppercase;
 }
+
+.ticketDescr h5 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.ticketDescr h5:first-of-type {
+    border-bottom: 1px dashed black;
+    padding-bottom: 4px;
+}
