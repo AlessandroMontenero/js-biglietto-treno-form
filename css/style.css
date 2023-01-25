@@ -1,6 +1,7 @@
 :root {
-    --bg-color: antiquewhite;
-    --depart-color: red;
+    --bg-color: rgb(240, 240,190);
+    --depart-color: rgb(175, 25, 30);
+    --right-bg-color: rgb(220, 190, 150);
 }
 
 .container {
@@ -14,6 +15,7 @@
     border: 1px solid black;
     border-radius: 10px;
     margin-top: 2rem;
+    display: flex;
 }
 
 .ticketInfo {
@@ -76,7 +78,6 @@
 
 
 .icon {
-    height: 95%;
     font-size: 2rem;
     background-color: black;
     color: var(--bg-color);
@@ -171,4 +172,60 @@
     grid-column-end: 7;
 }
 
+.ticketRight {
+    width: 100px;
+    height: 100%;
+    background-color: var(--right-bg-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.rightGrid {
+    display: grid;
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+    margin-bottom: 0px;
+    background-color: var(--right-bg-color);
+    grid-template-rows: 0.8fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    transform: rotate(270deg);
+    margin-left: -50px;
+    margin-top: 70px;
+}
+
+.rightGrid div {
+    border: 1px solid var(--depart-color);
+}
+
+.rightTitle {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-sizing: border-box;
+    background-color: var(--depart-color);
+}
+
+.rightTitle h3 {
+    font-size: 1rem;
+    margin: 0.2rem;
+    color: white;
+}
+
+.rightGrid div h5 {
+    font-size: 0.3rem;
+    margin: 0.2rem;;
+}
+
+.rightGrid div h4, 
+.rightGrid div p {
+    font-size: 0.7rem;
+    margin: 0.2rem;
+}
+
+.ticketRight .barCode {
+    width: 80px;
+}
